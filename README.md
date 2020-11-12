@@ -46,10 +46,14 @@ Here you can select the csv file you will be working with. You can also see the 
 ![dropdown selection](https://github.com/ralle123/Dash_app/blob/main/images/dropdown_selection.png)
 10. Once a selection has been made from the dropdownlist, two different types of graphs can show:
 a frequency graph if the column selected has categorical values or numerical values that have a unique value <= to 5
-![frequency graph](https://github.com/ralle123/Dash_app/blob/main/images/distribution.png) and this will show a representation of how the data is distributed for this column
+![frequency graph](https://github.com/ralle123/Dash_app/blob/main/images/distribution.png) 
+
+and this will show a representation of how the data is distributed for this column
 
 a distribution graph is shown if the values within the column are numerical values
-![distribution graph](https://github.com/ralle123/Dash_app/blob/main/images/distribution2.png) a quick distribution can be observed from the values in the column
+![distribution graph](https://github.com/ralle123/Dash_app/blob/main/images/distribution2.png) 
+
+a quick distribution can be observed from the values in the column
 
 
 ### Running an app locally without authentication
