@@ -57,4 +57,5 @@ Steps 6 to 10 from the previous section will be seen here
 
 ### Things that are needed
 - More time to fix the css
-- More time to connect options of changing column values with checkboxes, to clean based the the type of value found
+- More time to finish cleaning options ( missing null's & one hot encoding )
+![cleaning data options](https://github.com/ralle123/Dash_app/blob/main/images/cleaning_data.png)

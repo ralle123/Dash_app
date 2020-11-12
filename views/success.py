@@ -56,12 +56,12 @@ layout = html.Div(children=[
                                     dcc.Checklist(options=[
                                         {'label': 'lower', 'value': 'lower'},
                                         {'label': 'trim', 'value': 'trim'},
-                                        {'label': 'one-hot enc', 'value': 'one-hot'}
+                                        {'label': 'one-hot enc', 'value': 'one-hot','disabled':True}
                                     ],id='string_col')
                                     ]),html.Td([
                                         dcc.Checklist(options=[
-                                            {'label': 'Nulls', 'value': 'lower'},
-                                            {'label': 'Outliers', 'value': 'trim'},
+                                            {'label': 'Nulls', 'value': 'nulls','disabled':True},
+                                            {'label': 'Outliers', 'value': 'outliers'},
                                         ],id='num_col')
                                     ])],style={"border": "1px solid black"})
                             ])
@@ -137,18 +137,22 @@ def dropDown_selection(value):
               Output('mytablefile', 'children'),
               Output('my_dropdown','style'),
 			 [Input('upload-data', 'contents'),
-			  Input('upload-data', 'filename')])
-def update_output(contents, filename):
+			  Input('upload-data', 'filename'),
+              Input('string_col', 'value'),
+              Input('num_col', 'value')])
+def update_output(contents, filename, string_col, num_col):
     if contents is not None:
         dropdown_style = {"display":"inline"}
         df = pd.read_csv(filename)
-        ## ***need to see checkboxes to see what functions to call**
-        ## take outliers out with z-score
-        df = clean_outliers(df)
-        ## make all strings lowercase
-        df = lowercase_cat(df)
-        ## trim all strings
-        df = trimming_cat(df)
+        if 'outliers' in num_col:
+            ## take outliers out with z-score
+            df = clean_outliers(df)
+        if 'lower' in string_col:
+            ## make all strings lowercase
+            df = lowercase_cat(df)
+        if 'trim' in string_col:
+            ## trim all strings
+            df = trimming_cat(df)
         df.to_csv('temp.csv')
         file_info = "File Shape - {}".format(df.shape)
         data = df.to_dict('rows')
