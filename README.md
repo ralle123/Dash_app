@@ -57,4 +57,4 @@ Steps 6 to 10 from the previous section will be seen here
 
 ### Things that are needed
 - More time to fix the css
-- More time to add the option of changing column values based the the type of value found
+- More time to connect options of changing column values with checkboxes, to clean based the the type of value found

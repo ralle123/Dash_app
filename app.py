@@ -66,7 +66,7 @@ def display_page(pathname):
     [Input('page-content', 'children')])
 def cur_user(input1):
     if current_user.is_authenticated:
-        return html.Div('Current user: ' + current_user.username)
+        return html.Div('User - ' + current_user.username)
         # 'User authenticated' return username in get_id()
     else:
         return ''
