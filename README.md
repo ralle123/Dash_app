@@ -27,28 +27,29 @@ To run an app locally:
 3. proceed to the folder were you have downloaded the content and run `python app.py`
 4. open http://127.0.0.1:5000 in your browser
 5. once in the browser window, log into the application.
-![login window]()
+![login window](https://github.com/ralle123/Dash_app/blob/main/images/login.png)
 To try it out, use username `raul` password `test` otherwise use `add_remove_users.ipynb` to add more users.
 6. after login in you will reach the landing page.
-![landing page]()
+![landing page](https://github.com/ralle123/Dash_app/blob/main/images/landing_page.png)
 Here you can select the csv file you will be working with. You can also see in the upper right part of the page, the user that is logged in. You can also go back to `previous page` 
 7. once the `Select Files to Upload` link has been selected, a new window will open so the file on your local machine can be selected. You can use the `GermanDataBinary.csv` file provided to test.
-![select file]()
+![select file](https://github.com/ralle123/Dash_app/blob/main/images/select_file.png)
+![open file](https://github.com/ralle123/Dash_app/blob/main/images/open_file.png)
 8. once the file has loaded succesfully, the page will show many new options now
-..* part 1 - shows the content of the csv that has just been loaded
-..* part 2 - shows the vertical scroll bar to see the rest of the table page shown on screen
-..* part 3 - shows the horizontal scroll bar to see the rest of the table page shown on screen
-..* part 4 - shows the option to change the table page shown on screen
-..* part 5 - shows a dropdown that contains all the columns from the table   
-![file loaded]()
+..1. shows the content of the csv that has just been loaded
+..2. shows the vertical scroll bar to see the rest of the table page shown on screen
+..3. shows the horizontal scroll bar to see the rest of the table page shown on screen
+..4. shows the option to change the table page shown on screen
+..5. shows a dropdown that contains all the columns from the table   
+![file loaded](https://github.com/ralle123/Dash_app/blob/main/images/dropdown.png)
 9. a selection from an option in the dropdown will be needed now
-![dropdown selection]()
+![dropdown selection](https://github.com/ralle123/Dash_app/blob/main/images/dropdown_selection.png)
 10. once a selection has been done from the dropdownlist, two different types of graphs can show:
 a frequency graph if the column selected has categorical values or numerical values that have a unique value <= to 5
-![frequency graph]() and this will show a representation of how the data is distributed for this column
+![frequency graph](https://github.com/ralle123/Dash_app/blob/main/images/distribution.png) and this will show a representation of how the data is distributed for this column
 
 a distribution graph is shown if the values within the column are numerical values
-![distribution graph]() a quick distribution can be observed from the values in the column
+![distribution graph](https://github.com/ralle123/Dash_app/blob/main/images/distribution2.png) a quick distribution can be observed from the values in the column
 
 
 ### Running an app locally without authentication
