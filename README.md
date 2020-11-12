@@ -2,7 +2,7 @@
 
 This is a data exploration tool flask/plotly-dash application that consists of a couple of tools that can help you view a csv file in a rush.
 
-![Tool-login]()
+![load file tool](https://github.com/ralle123/Dash_app/blob/main/images/load_file.png)
 
 It contains a Flask-login implementation on top of a Dash application for user authentication.
 There are many options for user authentication in Dash. Start by reading ['user authentication'](https://dash.plotly.com/authentication) The basic authentication is a good place to start, but it provides a limited user interface. If something more involved is needed, Miguel Grinberg has a great page that talks about ['Flask authenication'](https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-v-user-logins) 
@@ -36,11 +36,11 @@ Here you can select the csv file you will be working with. You can also see the 
 ![select file](https://github.com/ralle123/Dash_app/blob/main/images/select_file.png)
 ![open file](https://github.com/ralle123/Dash_app/blob/main/images/open_file.png)
 8. Once the file has loaded succesfully, the page will show many new options
-..1. shows the content of the csv that has just been loaded
-..2. shows the vertical scroll bar to see the rest of the table page shown on screen
-..3. shows the horizontal scroll bar to see the rest of the table page shown on screen
-..4. shows the option to change the table page shown on screen
-..5. shows a dropdown that contains all the columns from the table   
+- 1. shows the content of the csv that has just been loaded
+- 2. shows the vertical scroll bar to see the rest of the table page shown on screen
+- 3. shows the horizontal scroll bar to see the rest of the table page shown on screen
+- 4. shows the option to change the table page shown on screen
+- 5. shows a dropdown that contains all the columns from the table   
 ![file loaded](https://github.com/ralle123/Dash_app/blob/main/images/dropdown.png)
 9. A selection from an option in the dropdown will be needed now
 ![dropdown selection](https://github.com/ralle123/Dash_app/blob/main/images/dropdown_selection.png)
@@ -54,3 +54,7 @@ a distribution graph is shown if the values within the column are numerical valu
 
 ### Running an app locally without authentication
 Steps 6 to 10 from the previous section will be seen here
+
+### Things that are needed
+- More time to fix the css
+- More time to add the option of changing column values based the the type of value found
